@@ -1,0 +1,19 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder" xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:t="urn:import:com.google.gwt.phono.test.client.widget">
+	<ui:style>
+		.fixedSize {
+			max-height: 350px;
+		}
+	
+		.bottom {
+			padding: 5px;
+			bottom: 5px;
+			position: relative;
+		}
+	</ui:style>
+	<g:HTMLPanel height="100%">
+		<t:MessageList ui:field="messageList" width="100%" styleName="{style.fixedSize}" height="350px"/>
+
+		<t:MessageEditor ui:field="messageEditor" width="95%" height="20px" styleName="{style.bottom}"/>
+	</g:HTMLPanel>
+</ui:UiBinder> 
